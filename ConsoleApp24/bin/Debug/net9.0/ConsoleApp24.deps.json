@@ -1,0 +1,84 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ConsoleApp24/1.0.0": {
+        "dependencies": {
+          "MessagePack": "3.1.2"
+        },
+        "runtime": {
+          "ConsoleApp24.dll": {}
+        }
+      },
+      "MessagePack/3.1.2": {
+        "dependencies": {
+          "MessagePack.Annotations": "3.1.2",
+          "MessagePackAnalyzer": "3.1.2",
+          "Microsoft.NET.StringTools": "17.11.4"
+        },
+        "runtime": {
+          "lib/net9.0/MessagePack.dll": {
+            "assemblyVersion": "3.1.2.0",
+            "fileVersion": "3.1.2.0"
+          }
+        }
+      },
+      "MessagePack.Annotations/3.1.2": {
+        "runtime": {
+          "lib/netstandard2.0/MessagePack.Annotations.dll": {
+            "assemblyVersion": "3.1.2.0",
+            "fileVersion": "3.1.2.0"
+          }
+        }
+      },
+      "MessagePackAnalyzer/3.1.2": {},
+      "Microsoft.NET.StringTools/17.11.4": {
+        "runtime": {
+          "lib/net8.0/Microsoft.NET.StringTools.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "17.11.4.40609"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleApp24/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MessagePack/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Aw5J6OxDnY8XDDEwtvygHKouhnDS3ltzB/2JGZyamN33y8KesxfdOhdJDxgIEbsD+fmKA4wI5i1qVRPQlmAXeg==",
+      "path": "messagepack/3.1.2",
+      "hashPath": "messagepack.3.1.2.nupkg.sha512"
+    },
+    "MessagePack.Annotations/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GRnkedUtk3CogYRLyBUQmXKbIyR+IwYS0N3X5Xg5SNw4S5XWL9s2gPUtxxvG9Vutsq7qkwENmfixoGLew+I4rg==",
+      "path": "messagepack.annotations/3.1.2",
+      "hashPath": "messagepack.annotations.3.1.2.nupkg.sha512"
+    },
+    "MessagePackAnalyzer/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J8lvKo1fw1z4xt9E/hRMn/JPbGZtLTRJXb7ocMbM9B72x15H7FLux8vq+SGtr8G3dYO8N1SKjeo2w6HEqOfDeA==",
+      "path": "messagepackanalyzer/3.1.2",
+      "hashPath": "messagepackanalyzer.3.1.2.nupkg.sha512"
+    },
+    "Microsoft.NET.StringTools/17.11.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mudqUHhNpeqIdJoUx2YDWZO/I9uEDYVowan89R6wsomfnUJQk6HteoQTlNjZDixhT2B4IXMkMtgZtoceIjLRmA==",
+      "path": "microsoft.net.stringtools/17.11.4",
+      "hashPath": "microsoft.net.stringtools.17.11.4.nupkg.sha512"
+    }
+  }
+}

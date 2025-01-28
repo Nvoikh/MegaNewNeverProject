@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "/Ve4a83iY08=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Герман\\source\\repos\\ConsoleApp24\\ConsoleApp24\\ConsoleApp24.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Герман\\.nuget\\packages\\messagepack\\3.1.2\\messagepack.3.1.2.nupkg.sha512",
+    "C:\\Users\\Герман\\.nuget\\packages\\messagepack.annotations\\3.1.2\\messagepack.annotations.3.1.2.nupkg.sha512",
+    "C:\\Users\\Герман\\.nuget\\packages\\messagepackanalyzer\\3.1.2\\messagepackanalyzer.3.1.2.nupkg.sha512",
+    "C:\\Users\\Герман\\.nuget\\packages\\microsoft.net.stringtools\\17.11.4\\microsoft.net.stringtools.17.11.4.nupkg.sha512"
+  ],
+  "logs": []
+}
