@@ -14,7 +14,7 @@ namespace ConsoleApp23
     public class TaskManager
     {
         private List<TaskItem> tasks = new List<TaskItem>();
-        private const string FileName = "tasks.dat";
+        private const string FileName = "TaskItem.dat";
 
         
         public void LoadTasks()
@@ -23,7 +23,7 @@ namespace ConsoleApp23
             {
                 using (var stream = new FileStream(FileName, FileMode.Open))
                 {
-                    MessagePackSerializer.Deserialize<List<Task>>(stream);
+                     MessagePackSerializer.Deserialize<List<TaskItem>>(stream);
 
 
 
@@ -41,13 +41,14 @@ namespace ConsoleApp23
             }
         }
 
-        
-        public void AddTask(Task task)
-        {
-            tasks.Add(TaskItem);
-        }
 
-       
+        public void AddTask(TaskItem task)
+        {
+            tasks.Add(task);
+        }
+            
+
+
         public bool RemoveTask(int taskId)
         {
             var task = tasks.Find(t => t.Id == taskId);
@@ -75,7 +76,7 @@ namespace ConsoleApp23
         }
 
         
-        public Task GetTaskById(int id)
+        public TaskItem GetTaskById(int id)
         {
             return tasks.Find(t => t.Id == id);
         }
