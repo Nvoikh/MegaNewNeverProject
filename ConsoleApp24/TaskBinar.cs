@@ -21,9 +21,11 @@ namespace ConsoleApp23
         {
             if (File.Exists(FileName))
             {
-                using (var stream = new FileStream(FileName, FileMode.Open))
+                using var stream = new FileStream(FileName, FileMode.Open) ;
+                if (stream.Length > 0) 
+
                 {
-                     MessagePackSerializer.Deserialize<List<TaskItem>>(stream);
+                   tasks.AddRange(MessagePackSerializer.Deserialize<List<TaskItem>>(stream));
 
 
 
