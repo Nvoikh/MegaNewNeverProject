@@ -27,9 +27,20 @@ namespace ConsoleApp23
                 Console.Write("Choose with number : ");
 
                 var input = Console.ReadLine();
+                // note 7: add enum for input types, for example
+                // public enum InputTypes
+                // {
+                //     Add,
+                //     Get,
+                //     Remove,
+                //     Exit
+                // }
+                // ^^ this should be in the separated file
 
+                
                 switch (input)
                 {
+                    // note 7.1: use enum values here
                     case "1":
 
                         Console.Write("Enter task title: ");
@@ -44,16 +55,28 @@ namespace ConsoleApp23
                         Console.WriteLine("Task added!");
                         break;
 
+                    // note 7.2: use enum values here
                     case "2":
 
+                        // note 9: it's better to get values here and then display them here (work with Console should not be placed in the business logic)
                         taskManager.ViewTasks();
                         Console.WriteLine("Press any key to continue...");
                         Console.ReadKey();
                         break;
 
+                    // note 7.3: use enum values here
                     case "3":
 
                         Console.Write("Enter task ID to remove: ");
+                        // note 8: it's better to use try parse here
+                        // if (int.TryParse(Console.ReadLine(), out int taskId))
+                        // {
+                        //     // all logic here
+                        // }
+                        // else
+                        // {
+                        //     Console.WriteLine("Please enter a valid integer value.");
+                        // }
                         int taskIdToRemove = int.Parse(Console.ReadLine());
                         bool removed = taskManager.RemoveTask(taskIdToRemove);
                         if (removed)
@@ -69,6 +92,7 @@ namespace ConsoleApp23
                         Console.ReadKey();
                         break;
 
+                    // note 7.4: use enum values here
                     case "4":
 
                         running = false;

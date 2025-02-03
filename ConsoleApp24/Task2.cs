@@ -8,10 +8,12 @@ using MessagePack;
 
 namespace ConsoleApp23
 {
+    // note 1.2: make file class name as a class name
+    // note 6: no need to use partial class here
     [MessagePackObject]
     public partial class TaskItem
     {
-       
+        // note 5.1: Id should be readonly (at least try to make private set or init instead of set)
         [Key(0)]
         public int Id { get; set; }
 
@@ -24,6 +26,7 @@ namespace ConsoleApp23
         [Key(3)]
         public bool IsCompleted { get; set; }
 
+        // note 5.2: try to avoid unused properties
         [Key(4)]
         public string? AddTask { get; private set; }
 
